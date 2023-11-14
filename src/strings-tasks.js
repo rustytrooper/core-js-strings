@@ -463,9 +463,8 @@ function invertCase(str) {
   const output = arr.map((el, i) => {
     if (el === symbol[i]) {
       return el.toLowerCase();
-    } else {
-      return el.toUpperCase();
     }
+    return el.toUpperCase();
   });
   return output.join('');
 }
